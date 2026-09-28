@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/output.css">
+  <title>Pantai Losari</title>
+</head>
+<body class="bg-[#faf9f6] text-stone-900 font-sans antialiased selection:bg-orange-100 selection:text-orange-950">
+
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#faf9f6]/85 border-b border-stone-200/80 px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-3">
+    <span class="font-serif text-xl tracking-wide text-orange-900 font-semibold">Panlos</span>
+    <nav class="flex items-center gap-5 sm:gap-6 flex-wrap justify-center text-sm font-medium text-stone-500">
+      <a href="#beranda" class="hover:text-stone-900 transition-colors capitalize">beranda</a>
+      <a href="#galeri" class="hover:text-stone-900 transition-colors capitalize">galeri</a>
+      <a href="#aktivitas" class="hover:text-stone-900 transition-colors capitalize">aktivitas</a>
+      <a href="#lokasi" class="hover:text-stone-900 transition-colors capitalize">lokasi</a>
+      <a href="#informasi" class="hover:text-stone-900 transition-colors capitalize">informasi</a>
+      <a href="#formulir" class="hover:text-stone-900 transition-colors capitalize">formulir</a>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-14">
+
+    <section id="beranda" class="text-center pt-8 pb-4 -scroll-mt-12">
+      <span id="tengah" class="inline-block">
+        <h1 class="text-4xl sm:text-5xl font-serif tracking-tight text-stone-900 mb-3 font-semibold">Pantai Losari</h1>
+      </span>
+      <p class="text-stone-600 text-lg max-w-xl mx-auto font-light leading-relaxed">
+        Salah satu ikon wisata utama Kota Makassar untuk menikmati panorama matahari terbenam.
+      </p>
+    </section>
+
+    <hr id="galeri" class="border-white mb-20">
+
+    <section  class="space-y-4 -scroll-mt-52">
+      <h1 class="text-2xl font-serif text-stone-900 font-semibold capitalize">Galeri</h1>
+      <figure class="bg-white border border-stone-200/90 rounded-2xl p-4 shadow-xs max-w-md mx-auto group hover:border-stone-300 transition-all">
+        <img id="polis" src="Policia.png" alt="Gambar pemandangan Pantai Losari" class="w-full h-64 object-cover rounded-xl transition duration-300 group-hover:scale-[1.01]">
+        <figcaption class="mt-3 text-center text-xs tracking-widest text-stone-500 uppercase font-medium">Anjungan Pantai Losari</figcaption>
+      </figure>
+    </section>
+
+    <hr id="aktivitas" class="border-white">
+
+    <section class="space-y-4">
+      <h1 class="text-2xl font-serif text-stone-900 font-semibold capitalize">Aktivitas</h1>
+      <ul class="space-y-3">
+        <li class="bg-white border border-stone-200/90 rounded-xl px-5 py-4 text-stone-700 text-sm sm:text-base flex items-center gap-3 shadow-xs hover:border-stone-300 transition-all">
+          <span class="text-orange-700 font-semibold">—</span> Menikmati panorama matahari terbenam di tepi anjungan
+        </li>
+        <li class="bg-white border border-stone-200/90 rounded-xl px-5 py-4 text-stone-700 text-sm sm:text-base flex items-center gap-3 shadow-xs hover:border-stone-300 transition-all">
+          <span class="text-orange-700 font-semibold">—</span> Menikmati kuliner khas Pisang Epe di sepanjang pantai
+        </li>
+      </ul>
+    </section>
+
+    <hr id="lokasi" class="border-white">
+
+    <section class="space-y-4">
+      <h1 class="text-2xl font-serif text-stone-900 font-semibold capitalize">Lokasi</h1>
+      <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl">
+        Berada di pusat Kota Makassar, Sulawesi Selatan, tepatnya di Jalan Metro Tanjung Bunga, Kecamatan Ujung Pandang.
+      </p>
+      <div class="overflow-hidden rounded-2xl border border-stone-200/90 shadow-xs">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.751343377129!2d119.40508172498214!3d-5.143680744833565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1d52ea30d089%3A0x6101a2ac09b61090!2sPantai%20Losari!5e0!3m2!1sid!2sid!4v1789359034815!5m2!1sid!2sid" class="w-full h-80 border-0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </section>
+
+    <hr id="informasi" class="border-white">
+
+    <section class="space-y-4">
+      <h1 class="text-2xl font-serif text-stone-900 font-semibold capitalize">Informasi Kuliner</h1>
+      <div class="overflow-hidden rounded-2xl border border-stone-200/90 bg-white shadow-xs">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-stone-50 border-b border-stone-200/80">
+              <th class="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-stone-700">Nama Makanan</th>
+              <th class="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-stone-700">Kisaran Harga</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-100 text-sm text-stone-700">
+            <tr class="hover:bg-orange-50/40 transition-colors">
+              <td class="px-5 py-4 font-medium text-stone-900">Pisang Epe Original / Cokelat / Keju</td>
+              <td class="px-5 py-4">Rp 15.000 – Rp 25.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr id="formulir" class="border-white">
+
+    <section class="space-y-4">
+      <h1 class="text-2xl font-serif text-stone-900 font-semibold capitalize">Hubungi Kami</h1>
+      <form action="" class="bg-white border border-stone-200/90 rounded-2xl p-6 sm:p-8 shadow-xs max-w-lg space-y-4">
+        <div>
+          <label for="nama" class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">Nama</label>
+          <input type="text" id="nama" placeholder="Masukkan nama Anda" required class="w-full px-4 py-2.5 bg-stone-50/70 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-orange-700 focus:bg-white focus:ring-3 focus:ring-orange-600/10 transition-all">
+        </div>
+
+        <div>
+          <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">Email</label>
+          <input type="email" id="email" placeholder="nama@email.com" class="w-full px-4 py-2.5 bg-stone-50/70 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-orange-700 focus:bg-white focus:ring-3 focus:ring-orange-600/10 transition-all">
+        </div>
+
+        <div>
+          <label for="pesanmu" class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">Pesan</label>
+          <textarea name="pesanmu" id="pesanmu" rows="4" placeholder="Tulis pesan atau pertanyaan Anda di sini..." class="w-full px-4 py-2.5 bg-stone-50/70 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:border-orange-700 focus:bg-white focus:ring-3 focus:ring-orange-600/10 transition-all resize-y"></textarea>
+        </div>
+
+        <input type="submit" value="Kirim Pesan" class="px-6 py-2.5 bg-stone-900 text-white rounded-lg text-sm font-medium hover:bg-orange-800 transition-all cursor-pointer shadow-xs active:scale-[0.99]">
+      </form>
+    </section>
+
+    <hr class="border-white">
+
+  </main>
+
+  <footer id="footer" class="py-10 text-center text-xs text-stone-500 border-t border-stone-200/80 bg-white">
+    &copy; Created with ❤️ by Muh. Rafly Nurramadhan
+  </footer>
+
+</body>
+</html>
