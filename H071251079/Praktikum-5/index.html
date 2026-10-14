@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Anggota Marsha</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="py-6 px-10 bg-gray-200 h-full">
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+            
+        <div class="md:bg-white col-span-3 rounded-xl p-0 md:p-4 flex flex-col md:border border-gray-300">
+            <div class="font-semibold mb-4 md:block hidden">Tim Masha</span></div>
+            <div class="text-sm text-gray-500 font-semibold mb-2 md:block hidden">Anggota</div>
+            <div id="errorKoneksi" class="hidden flex flex-col justify-center">
+                <div class="text-gray-500 text-center">Gagal membuat tugas <span id="namaTerpilih">fdsaf</span>. Koneksi ke server terputus</div>
+                <button id="muatHalamann" class="p-2 border border-gray-400 hover:bg-gray-200 font-semibold">Coba lagi</button>
+            </div>
+            <div id="userList" class="flex md:flex-col flex-row md:gap-0 gap-2"></div>
+        </div>
+        <div class="bg-white col-span-9 rounded-xl border border-gray-300">
+            <div class="p-4 border-b-2 border-b-gray-300">
+                <div class="text-2xl font-semibold mb-2">Tugas <span id="namaUser"></span></div>
+                <div class="flex justify-between items-center">
+                    <div class="text-gray-700"><span id="jumlahCompletedTruee">0</span> dari <span id="jumlahCompleteds">0</span> tugas selesai</div>
+                    <div class="w-48 bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                    <div 
+                        id="progress-bar" 
+                        class="bg-emerald-600 h-full rounded-full transition-all duration-300 ease-out"
+                        style="width: 0%;"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col md:flex-row gap-2 items-start w-full">
+                <input id="mencari" type="text" class="border border-gray-300 rounded-xl p-4 bg-gray-100 text-gray-700 min-w-sm md:min-w-sm" placeholder="Cari judul tugas">
+                <form id="formSubmit" class="flex flex-row gap-2 flex-1 items-start w-full">
+                    <div class="flex-1 flex flex-col">
+                        <input id="buatJudul" type="text" class="border border-gray-300 rounded-xl p-4 text-gray-700 w-full" placeholder="Tambah tugas baru,minimal 5 karakter">
+                        <p id="pesanErorr" class="text-red-500 text-sm mt-1 ml-1"></p>
+                    </div>
+                    <button id="btnSimpan" type="submit" class="bg-blue-700 text-white font-semibold p-4 rounded-xl whitespace-nowrap mb-10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Simpan</button>
+                </form>
+            </div>
+            <div id="errorKoneksiTodo" class="hidden flex flex-col justify-center">
+                <div class="text-gray-500 text-center">Gagal membuat tugas <span id="namaTerpilih">fdsaf</span>. Koneksi ke server terputus</div>
+                <button id="muatHalamanTodo" class="p-2 border border-gray-400 hover:bg-gray-200 font-semibold">Coba lagi</button>
+            </div>
+            <div id="todoList" class="space-y-"></div>
+            <div id="todoTakAda" class="hidden p-4 text-gray-700">Tidak ada tugas yang cocok.</div>
+        </div>
+
+    </div>
+
+    <div 
+        id="pesanSukses" 
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-gray-900 text-white font-medium px-8 py-3 rounded-2xl shadow-xl z-50 transition-all duration-300 ease-out opacity-0 translate-y-8 pointer-events-none flex items-center justify-center whitespace-nowrap"
+    >
+        Tugas berhasil ditambahkan.
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
